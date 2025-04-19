@@ -1,0 +1,22 @@
+.transactions-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.transactions-content {
+  flex: 1;
+  padding: var(--spacing-xl);
+  margin-left: 250px;
+  transition: margin-left var(--animation-speed-medium) ease;
+}
+
+.transactions-table {
+  margin-bottom: var(--spacing-xl);
+}
+
+@media (max-width: 768px) {
+  .transactions-content {
+    margin-left: 0;
+    padding: var(--spacing-md);
+  }
+}

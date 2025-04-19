@@ -1,0 +1,44 @@
+.progress-container {
+  margin-bottom: var(--spacing-md);
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.progress-track {
+  width: 100%;
+  background-color: var(--border-color);
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: var(--border-radius-sm);
+  transition: width var(--animation-speed-slow) ease;
+}
+
+.progress-primary {
+  background-color: var(--primary-color);
+}
+
+.progress-secondary {
+  background-color: var(--secondary-color);
+}
+
+.progress-success {
+  background-color: var(--success-color);
+}
+
+.progress-warning {
+  background-color: var(--warning-color);
+}
+
+.progress-danger {
+  background-color: var(--danger-color);
+}

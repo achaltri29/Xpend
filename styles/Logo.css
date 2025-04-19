@@ -1,0 +1,39 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-x {
+  font-weight: 800;
+  color: white;
+}
+
+.logo-pend {
+  font-weight: 300;
+  color: var(--secondary-color);
+}
+
+/* Logo sizes */
+.logo-small .logo-x {
+  font-size: var(--font-size-xl);
+}
+
+.logo-small .logo-pend {
+  font-size: var(--font-size-lg);
+}
+
+.logo-medium .logo-x {
+  font-size: var(--font-size-2xl);
+}
+
+.logo-medium .logo-pend {
+  font-size: var(--font-size-xl);
+}
+
+.logo-large .logo-x {
+  font-size: var(--font-size-3xl);
+}
+
+.logo-large .logo-pend {
+  font-size: var(--font-size-2xl);
+}

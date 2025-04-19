@@ -1,0 +1,57 @@
+.stat-card {
+  background-color: var(--card-color);
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 2px 8px var(--shadow-color);
+  padding: var(--spacing-lg);
+  transition: transform var(--animation-speed-medium) ease, box-shadow var(--animation-speed-medium) ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.stat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.stat-card-title {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.stat-card-icon {
+  color: var(--text-muted);
+  font-size: var(--font-size-lg);
+}
+
+.stat-card-value {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Variants */
+.stat-card-income {
+  border-left: 4px solid var(--success-color);
+}
+
+.stat-card-expense {
+  border-left: 4px solid var(--danger-color);
+}
+
+.stat-card-savings {
+  border-left: 4px solid var(--info-color);
+}
+
+.stat-card-default {
+  border-left: 4px solid var(--secondary-color);
+}

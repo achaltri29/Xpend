@@ -1,0 +1,91 @@
+.export-import-container {
+  padding: var(--spacing-lg);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.export-import-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.export-import-section {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: var(--card-shadow);
+}
+
+.file-input-label {
+  display: block;
+  padding: var(--spacing-md);
+  background: var(--input-bg);
+  border: 2px dashed var(--border-color);
+  border-radius: var(--border-radius);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-input-label:hover {
+  border-color: var(--primary-color);
+  background: var(--hover-bg);
+}
+
+.export-import-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.export-import-buttons button {
+  flex: 1;
+}
+
+.export-import-content {
+  flex: 1;
+  padding: var(--spacing-xl);
+  margin-left: 250px;
+  transition: margin-left var(--animation-speed-medium) ease;
+}
+
+.export-import-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.export-section,
+.import-section {
+  background-color: var(--card-color);
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 2px 8px var(--shadow-color);
+  padding: var(--spacing-xl);
+}
+
+.export-section h3,
+.import-section h3 {
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+  font-size: var(--font-size-lg);
+}
+
+.export-section p,
+.import-section p {
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-secondary);
+}
+
+.export-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.file-input-container {
+  margin-bottom: var(--spacing-lg);
+}
+
+.file-input-container input[type="file"] {
+  display: none;
+}

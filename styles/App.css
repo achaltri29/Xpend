@@ -1,0 +1,209 @@
+/* Base styles */
+:root {
+  /* Light theme colors */
+  --primary-color: #4a6fa5;
+  --primary-dark: #3a5a8c;
+  --primary-light: #6b8cb9;
+
+  --secondary-color: #00c2cb;
+  --secondary-dark: #00a3ab;
+  --secondary-light: #4fd8df;
+
+  --accent-color: #ff7e5f;
+  --accent-dark: #e56a4e;
+  --accent-light: #ff9d85;
+
+  --success-color: #2ecc71;
+  --warning-color: #f1c40f;
+  --danger-color: #e74c3c;
+  --info-color: #3498db;
+
+  --background-color: #f8f9fa;
+  --surface-color: #ffffff;
+  --card-color: #ffffff;
+
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-muted: #999999;
+
+  --border-color: #e0e0e0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  /* Animation durations */
+  --animation-speed-slow: 500ms;
+  --animation-speed-medium: 300ms;
+  --animation-speed-fast: 150ms;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  /* Border radius */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 1rem;
+  --border-radius-xl: 2rem;
+
+  /* Font sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 3rem;
+}
+
+/* Dark theme colors */
+[data-theme="dark"] {
+  --primary-color: #5d82b3;
+  --primary-dark: #4a6fa5;
+  --primary-light: #7a9ac5;
+
+  --secondary-color: #00d2db;
+  --secondary-dark: #00c2cb;
+  --secondary-light: #4fe8ef;
+
+  --accent-color: #ff8f73;
+  --accent-dark: #ff7e5f;
+  --accent-light: #ffab96;
+
+  --success-color: #2ecc71;
+  --warning-color: #f1c40f;
+  --danger-color: #e74c3c;
+  --info-color: #3498db;
+
+  --background-color: #121212;
+  --surface-color: #1e1e1e;
+  --card-color: #2d2d2d;
+
+  --text-primary: #f0f0f0;
+  --text-secondary: #cccccc;
+  --text-muted: #999999;
+
+  --border-color: #444444;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  line-height: 1.5;
+  transition: background-color var(--animation-speed-medium) ease, color var(--animation-speed-medium) ease;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--animation-speed-fast) ease;
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--font-size-3xl);
+}
+
+h2 {
+  font-size: var(--font-size-2xl);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Utility classes */
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+.text-accent {
+  color: var(--accent-color);
+}
+.text-success {
+  color: var(--success-color);
+}
+.text-warning {
+  color: var(--warning-color);
+}
+.text-danger {
+  color: var(--danger-color);
+}
+.text-info {
+  color: var(--info-color);
+}
+.text-muted {
+  color: var(--text-muted);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+.bg-accent {
+  background-color: var(--accent-color);
+}
+.bg-success {
+  background-color: var(--success-color);
+}
+.bg-warning {
+  background-color: var(--warning-color);
+}
+.bg-danger {
+  background-color: var(--danger-color);
+}
+.bg-info {
+  background-color: var(--info-color);
+}
+
+/* Container styles */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Toast container */
+.toast-container {
+  position: fixed;
+  top: var(--spacing-lg);
+  right: var(--spacing-lg);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}

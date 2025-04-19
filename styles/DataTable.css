@@ -1,0 +1,116 @@
+.data-table-container {
+  background-color: var(--card-color);
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 2px 8px var(--shadow-color);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  overflow: hidden;
+}
+
+.data-table-search {
+  margin-bottom: var(--spacing-lg);
+}
+
+.data-table-search input {
+  width: 100%;
+  max-width: 300px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  background-color: var(--surface-color);
+  color: var(--text-primary);
+  transition: border-color var(--animation-speed-fast) ease;
+}
+
+.data-table-search input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.data-table-wrapper {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: var(--spacing-md);
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.data-table th {
+  background-color: var(--surface-color);
+  font-weight: 600;
+  color: var(--text-primary);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.data-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.data-table th.sortable:hover {
+  background-color: var(--background-color);
+}
+
+.sort-indicator {
+  margin-left: var(--spacing-xs);
+}
+
+.data-table tbody tr {
+  transition: background-color var(--animation-speed-fast) ease;
+}
+
+.data-table tbody tr:hover {
+  background-color: var(--background-color);
+}
+
+.data-table .no-data {
+  text-align: center;
+  padding: var(--spacing-xl);
+  color: var(--text-muted);
+}
+
+.data-table-pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: var(--spacing-lg);
+  gap: var(--spacing-md);
+}
+
+.data-table-pagination button {
+  padding: var(--spacing-xs) var(--spacing-md);
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background-color var(--animation-speed-fast) ease;
+}
+
+.data-table-pagination button:hover:not(:disabled) {
+  background-color: var(--background-color);
+}
+
+.data-table-pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-info {
+  color: var(--text-secondary);
+}
+
+.action-buttons {
+  display: flex;
+  gap: var(--spacing-sm);
+}
