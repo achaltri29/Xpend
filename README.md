@@ -13,9 +13,9 @@ Xpend is a personal finance tracker built with ReactJS, Node.js, and MongoDB. It
 
 ## Demo Video
 
-Watch our comprehensive feature walkthrough and demonstration:
+Watch the comprehensive feature walkthrough and demonstration:
 
-[![Xpend Demo Video](https://img.youtube.com/vi/eRan6JYjGHw/0.jpg)](https://www.youtube.com/watch?v=eRan6JYjGHw)
+[![Xpend Demo Video](https://www.youtube.com/watch?v=eRan6JYjGHw)
 
 [**Click here to watch the full demo**](https://www.youtube.com/watch?v=eRan6JYjGHw)
 
